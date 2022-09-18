@@ -1,0 +1,33 @@
+@use "../../sass/" as *;
+.heroInfo {
+  background-color: #f0f0f0;
+  padding: 1rem 1rem 1rem 0;
+  .flex-info {
+    display: flex;
+    padding-left: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    font-size: 15px;
+    font-family: "yekan";
+    .info-desc-flex {
+      display: none;
+      @include tablet {
+        display: block;
+      }
+    }
+    .info-desc {
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+  img {
+    width: 50px;
+    @include mobile {
+      width: 40px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@use "../../sass/" as *;
+.hero-section {
+  background-color: #00a2a4;
+  height: 24rem;
+  width: 100%;
+  margin-top: 3.8rem;
+  position: relative;
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .hero-container {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hero-info {
+      gap: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      font-family: "yekan";
+      color: #fff;
+      h4 {
+        font-size: 35px;
+        @include tablet {
+          font-size: 25px;
+        }
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+      p {
+        font-size: 20px;
+        @include tablet {
+          font-size: 13px;
+        }
+        @include mobile {
+          font-size: 13px;
+        }
+      }
+      .install-hero {
+        width: 219px;
+        height: 40px;
+        background-color: #fff;
+        color: #00a2a4;
+        font-family: "yekan";
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+        @include tablet {
+          width: 150px;
+          height: 30px;
+          font-size: 12px;
+        }
+        @include mobile {
+          width: 130px;
+          height: 25px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  img {
+    width: 270px;
+    @include tablet {
+      width: 180px;
+    }
+    @include mobile {
+      width: 130px;
+    }
+  }
+}

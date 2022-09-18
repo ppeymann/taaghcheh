@@ -1,0 +1,16 @@
+@use "../../sass/" as *;
+.hero-swiper {
+  width: 80%;
+  margin: auto;
+  margin: 5rem auto;
+  img {
+    width: 500px;
+    border-radius: 15px;
+    @include tablet {
+      width: 350px;
+    }
+    @include mobile {
+      width: 250px;
+    }
+  }
+}
