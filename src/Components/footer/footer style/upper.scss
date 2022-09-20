@@ -1,0 +1,35 @@
+@use "../../../sass/" as *;
+
+.upper-grid__container {
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse !important;
+  }
+  img {
+    @media screen and (max-width: 330px) {
+      width: 120px;
+    }
+  }
+}
+.upper-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: "yekan";
+  color: #008b8d;
+}
+.upper-btn {
+  width: 150px;
+  height: 39px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00a2a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-family: "yekan";
+  color: #fff;
+  @media screen and (max-width: 330px) {
+    width: 120px;
+  }
+}

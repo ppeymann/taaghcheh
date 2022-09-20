@@ -1,0 +1,83 @@
+@use "../../sass/" as *;
+.trending {
+  width: 100%;
+  a {
+    text-decoration: none;
+    color: #3e3e3e;
+  }
+  font-family: "yekan";
+  .trending-container {
+    margin-bottom: 9rem;
+    display: flex;
+    flex-direction: column;
+    .trend-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      @include tablet {
+        font-size: 1.2rem;
+      }
+      @include mobile {
+        font-size: 0.8rem;
+      }
+      .subtitle {
+        color: gray;
+      }
+    }
+    .seeing-trending {
+      font-size: 1rem;
+      margin-left: 2rem;
+      @include tablet {
+        font-size: 0.8rem;
+      }
+      @include mobile {
+        font-size: 0.7rem;
+      }
+      a {
+        color: lightgray;
+        text-decoration: none;
+        transition: 0.2s;
+        &:hover {
+          color: gray;
+        }
+      }
+    }
+  }
+}
+.swiper-container {
+  text-align: center;
+  img {
+    width: 150px;
+    height: 225px;
+    border-radius: 5px;
+    @include tablet {
+      width: 120px;
+      height: 180px;
+    }
+    @include mobile {
+      width: 92px;
+      height: 138px;
+    }
+  }
+  .name-book {
+    font-size: 15px;
+    @include tablet {
+      font-size: 12px;
+    }
+    @include mobile {
+      font-size: 10px;
+    }
+  }
+  .name-author {
+    font-size: 13px;
+    color: gray;
+    @include tablet {
+      font-size: 11px;
+    }
+    @include mobile {
+      font-size: 9px;
+    }
+  }
+}

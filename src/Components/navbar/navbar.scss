@@ -17,6 +17,10 @@
     }
   }
 }
+a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
 .nav-container {
   margin-top: 1rem;
 }
@@ -35,6 +39,7 @@
     .Logo {
       font-family: "Afsaneh";
       transition: all 0.3s ease;
+
       cursor: pointer;
       &:hover {
         color: #00a2a4;

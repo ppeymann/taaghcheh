@@ -1,0 +1,48 @@
+@use "../../sass/" as *;
+
+.book-detail {
+  background-color: #f5f5f5;
+  font-family: "yekan";
+  padding-top: 1rem;
+  &__title {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  &__infos {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 0.9rem;
+    @include tablet {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+    .book-detail__info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      border-left: 1px solid #999;
+      padding: 0 0.8rem;
+      @include tablet {
+        flex-direction: row;
+        border: none;
+        font-size: 0.8rem;
+
+        justify-content: space-around;
+      }
+    }
+    .book-detail__titleInfo {
+      color: #999;
+      @include tablet {
+        margin-left: 5rem;
+      }
+    }
+    .book-detail__valueInfo {
+      @include tablet {
+        text-align: left;
+      }
+    }
+  }
+}

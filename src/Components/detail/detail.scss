@@ -1,0 +1,112 @@
+@use "../../sass/" as *;
+
+.detail {
+  margin: 5rem 0 8rem;
+  font-family: "yekan";
+  font-size: 0.8rem;
+  .detail-route {
+    background-color: #f5f5f5;
+    padding: 0.8rem 0;
+  }
+  .image-rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    color: #8e8e8e;
+    .rating-text {
+      @include mobile {
+        font-size: 0.9rem;
+      }
+    }
+    img {
+      border-radius: 8px;
+      @media screen and (max-width: 900px) {
+        width: 180px;
+      }
+      @include mobile {
+        width: 140px;
+      }
+    }
+  }
+  .grid-container {
+    @include tablet {
+      justify-content: space-around;
+    }
+  }
+  .detail-right {
+    background-color: #f5f5f5;
+    @media screen and (max-width: 900px) {
+      background-color: transparent;
+    }
+    color: #999;
+    line-height: 30px;
+    border-radius: 8px;
+    justify-content: space-between;
+    @include tablet {
+      text-align: center;
+    }
+    .detail-right__info {
+      @include mobile {
+        justify-content: space-around;
+      }
+    }
+    .detail-title {
+      font-size: 1rem;
+      margin-bottom: 4rem;
+      color: #000;
+      @include tablet {
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+      }
+      @include mobile {
+        font-size: 0.69rem;
+        margin-bottom: 1rem;
+      }
+    }
+    .detail-favorit__icon {
+      text-align: center;
+      margin-top: 5rem;
+      display: flex;
+      gap: 1rem;
+      font-size: 1.3rem;
+      @media screen and (max-width: 900px) {
+        justify-content: center;
+        margin-top: 3rem;
+      }
+      color: #00a2a4;
+      .detail-icon {
+        cursor: pointer;
+      }
+    }
+    .detail-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      @include mobile {
+        gap: 0.5rem;
+        align-items: center;
+      }
+      .detail-btn {
+        padding: 10px 15px;
+        outline: none;
+        font-family: "yekan";
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid #00a2a4;
+        border-radius: 20px;
+        @include mobile {
+          width: 120px;
+          padding-right: 5px 7.5px;
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
+.price-btn {
+  background-color: #00a2a4 !important;
+  color: #f5f5f5 !important;
+}

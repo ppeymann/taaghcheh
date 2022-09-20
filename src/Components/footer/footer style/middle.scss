@@ -1,0 +1,41 @@
+@use "../../../sass/" as *;
+
+.middle-item__right {
+  font-family: "yekan";
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  height: 100% !important;
+  p {
+    font-size: 0.8rem;
+  }
+  .middle-logo {
+    img {
+      height: 40px;
+    }
+  }
+}
+
+.middle-divider {
+  display: none;
+  @media screen and (max-width: 900px) {
+    display: block;
+    width: 100%;
+  }
+}
+.middle-link {
+  padding: 0.8rem 0;
+}
+.middle-left {
+  a {
+    text-decoration: none;
+    padding: 0.3rem 0;
+    color: rgb(60, 60, 60);
+    transition: 0.3s;
+    font-size: 0.7rem;
+    &:hover {
+      color: #008b8d;
+    }
+  }
+}

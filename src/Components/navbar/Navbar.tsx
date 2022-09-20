@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Container, Grid } from "@mui/material";
 
 // icon import
@@ -32,10 +33,8 @@ const Navbar = () => {
     const navScroll = document.querySelector(".navbar");
     if (+window.scrollY > 0) {
       navScroll?.classList.add("scroll");
-      console.log("scrolled");
     } else if (+window.scrollY == 0) {
       navScroll?.classList.remove("scroll");
-      console.log("back");
     }
   });
 
@@ -59,7 +58,9 @@ const Navbar = () => {
                   <MenuIcon sx={{ cursor: "pointer" }} onClick={oppening} />
                   <SearchIcon className="search-icon" />
                 </div>
-                <h1 className="Logo">طاقچه</h1>
+                <Link to="/">
+                  <h1 className="Logo">طاقچه</h1>
+                </Link>
                 <ul className="nav-menu">
                   <li>دسته بندی</li>
                   <li>بی نهایت</li>
